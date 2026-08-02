@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>    
+        <div class="logo-wrapper">  
+            你好世界1<br>
+            <span class="logo">你好世界2</span>
+            <style>
+                .logo {
+                    color: red;
+                }
+            </style>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/articles">文章</a></li>
+                <li><a href="/about">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <!-- 这是一篇具体的文章，用 <article> 包裹，表示它是独立完整的 -->
+        <article>
+            <h1>HTML语义化标签深度解析</h1>
+            <p>作者：小明 | 发布时间：2026-07-30</p>
+            
+            <!-- 文章正文段落 -->
+            <p>很多初学者分不清 header 和 div，其实...</p>
+            
+            <!-- 4. 文章里的评论区域：它属于文章的一部分，但为了结构清晰，用 <section> 划分 -->
+            <section>
+                <h2>热门评论</h2>
+                <p>张三：讲得太好了！</p>
+                <p>李四：受益匪浅。</p>
+            </section>
+        </article>
+
+        <!-- 5. 侧边栏：<aside> 用来放与文章相关但非核心的补充信息（比如广告、相关推荐） -->
+        <aside>
+            <h3>相关推荐</h3>
+            <ul>
+                <li><a href="#">CSS Flexbox 布局</a></li>
+                <li><a href="#">JavaScript 闭包</a></li>
+            </ul>
+            <!-- 注意：这里的推荐链接为了样式整齐，依然用 <div> 或 <span> 辅助，但外层结构用 <aside> -->
+        </aside>
+
+    </main>
+
+    <!-- 6. 底部版权：用 <footer> 包裹 -->
+    <footer>
+        <p>© 2026 我的技术博客 | 备案号：京ICP备xxxx号</p>
+        <!-- 底部如果需要放友情链接，依然可以用 <div> 包着，但大结构是 footer -->
+    </footer>
+    
+</body>
+</html>
