@@ -2,12 +2,12 @@
 import { ref } from 'vue'
 
 const value = ref('')
+const str = ref('hello vue')
 const list = ref([
   { value: '吃饭', isCompleted: true },
   { value: '睡觉', isCompleted: false },
   { value: '打豆豆', isCompleted: false },
 ])
-
 function add() {
   list.value.push({
     value: value.value,
