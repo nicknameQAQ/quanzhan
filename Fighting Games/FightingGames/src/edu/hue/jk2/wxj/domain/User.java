@@ -31,14 +31,14 @@ public class User {
 
     public User() {
         id = creatID();
-        status = true;
+        status = false;
     }
 
     public User(String username, String password) {
         id = creatID();
         this.username = username;
         this.password = password;
-        status = true;
+        status = false;
     }
 
     public String getId() {
