@@ -75,6 +75,10 @@ public class Login {
             String rightPassword = u.getPassword();
             if (password.equals(rightPassword)) {
                 System.out.println("登陆成功,游戏启动");
+                //创建游戏对象
+                FightingGame fg = new FightingGame();
+                fg.gameStart(username);
+
                 break;
             } else {
                 System.out.println("登陆失败,密码错误");
@@ -262,7 +266,6 @@ public class Login {
     public int findIndex(ArrayList<User> list,String Username){
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getUsername().equals(Username)) {
-                System.out.println("找到用户名" + Username + "，索引为" + i);
                 return i;
             }
 
