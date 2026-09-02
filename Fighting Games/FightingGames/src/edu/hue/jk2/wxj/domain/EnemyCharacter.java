@@ -2,8 +2,8 @@ package edu.hue.jk2.wxj.domain;
 
 public class EnemyCharacter extends CharacterBean{
     //敌方游戏角色
-    String skill;
-    boolean defending;
+    public String skill;
+    public boolean defending;
 
     public EnemyCharacter() {
         super();

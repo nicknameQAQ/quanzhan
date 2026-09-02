@@ -3,7 +3,7 @@ package edu.hue.jk2.wxj.domain;
 public class CharacterBean {
     //角色名称由登录而来（name）
     public String name;
-    public int HP;;
+    public int HP;
     public int maxHP;
     public int attack;
     public int defense;
@@ -29,6 +29,7 @@ public class CharacterBean {
         if (HP > maxHP){
             HP = maxHP;
         }
+
     }
     //受到伤害
     public void takeDamage(int amount){
